@@ -702,7 +702,7 @@ button {
    @media screen and (max-width: 768px) {
      .floating-icons {
        bottom: 10px; /* Adjust as needed for smaller screens */
-       left: 10px; /* Adjust as needed for smaller screens */
+       right: 10px; /* Adjust as needed for smaller screens */
      }
    }
    
