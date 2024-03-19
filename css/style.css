@@ -657,7 +657,7 @@ button {
 
 
 
-/* .floating-icons {
+ .floating-icons {
      position: fixed;
      bottom: 20px;
      right: 20px;
@@ -682,29 +682,11 @@ button {
    .call-icon img {
      width: 40px;
      height: 40px;
-   } */
+   } 
 
 
 
-   .floating-icons {
-     position: fixed;
-     bottom: 20px; /* Adjust as needed */
-     right: 20px; /* Adjust as needed */
-     display: flex;
-     flex-direction: column;
-   }
    
-   .whatsapp-icon,
-   .call-icon {
-     margin-bottom: 10px; /* Adjust as needed */
-   }
-   
-   @media screen and (max-width: 768px) {
-     .floating-icons {
-       bottom: 10px; /* Adjust as needed for smaller screens */
-       right: 10px; /* Adjust as needed for smaller screens */
-     }
-   }
    
 
 
@@ -728,6 +710,30 @@ button {
 .mapimg figure img {
      width: 100%;
 }
+
+
+
+/* Default styles */
+.mapimg iframe {
+     width: 100%; /* Full width */
+     height: 300px; /* Default height */
+ }
+ 
+ /* Tablet (iPad) */
+ @media only screen and (min-width: 768px) {
+    .mapimg iframe {
+         height: 400px; /* Adjusted height for tablets */
+     }
+ }
+ 
+ /* Laptop/Desktop */
+ @media only screen and (min-width: 992px) {
+    .mapimg iframe {
+         height: 450px; /* Adjusted height for laptops/desktops */
+     }
+ }
+ 
+
 
 label {
      color: #fff;
