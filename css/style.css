@@ -657,7 +657,7 @@ button {
 
 
 
-.floating-icons {
+/* .floating-icons {
      position: fixed;
      bottom: 20px;
      right: 20px;
@@ -677,12 +677,37 @@ button {
    }
    
    
-   /* Style your icons and options as needed */
+    Style your icons and options as needed 
    .whatsapp-icon img,
    .call-icon img {
      width: 40px;
      height: 40px;
+   } */
+
+
+
+   .floating-icons {
+     position: fixed;
+     bottom: 20px; /* Adjust as needed */
+     right: 20px; /* Adjust as needed */
+     display: flex;
+     flex-direction: column;
    }
+   
+   .whatsapp-icon,
+   .call-icon {
+     margin-bottom: 10px; /* Adjust as needed */
+   }
+   
+   @media screen and (max-width: 768px) {
+     .floating-icons {
+       bottom: 10px; /* Adjust as needed for smaller screens */
+       left: 10px; /* Adjust as needed for smaller screens */
+     }
+   }
+   
+
+
 
 .contact {
      background: #021626;
@@ -813,19 +838,26 @@ label {
      display: grid;
      grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
      gap: 20px;
-     margin-bottom: 0 2rem;
+     
      margin-bottom: 1rem;
+     place-items: center;
      justify-content: center;
      align-items: center;
    }
    
    .card1 {
-     width: 100%;
+     width: 400px;
      height: 400px;
      position: relative;
      overflow: hidden;
      margin: 10px;
      border-radius: 10px;
+     transition: transform 0.3s ease,box-shadow 0.3s ease;
+   }
+
+   .card1:hover{
+     transform: scale(1.05);
+     box-shadow: 0 0 10px rgba(243, 100, 100, 0.5); 
    }
    
    .card1 img {
