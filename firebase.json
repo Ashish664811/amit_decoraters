@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "amit_decoraters",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
